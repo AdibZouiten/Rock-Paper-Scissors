@@ -95,7 +95,8 @@ a{
     gap:1em;
 }
 
-.scores-box{
+.computer-scores-box,
+.player-scores-box{
     background-color: #151D2C;
     padding:2em;
     width:200px;

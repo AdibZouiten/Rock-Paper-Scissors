@@ -18,27 +18,27 @@
             <h3>Choose your weapon</h3>
             <p>First to score 5 points wins the game</p>
             <div class="btn-group">
-                <button class="btn">rock</button>
-                <button class="btn">paper</button>
-                <button class="btn">scissors</button>
+                <button class="btn" onclick="getResult(event)" id="rock" value="rock">rock</button>
+                <button class="btn" onclick="getResult(event)" id="paper" value="paper">paper</button>
+                <button class="btn" onclick="getResult(event)" id="scissors" value="scissors">scissors</button>
             </div>
             <div class="scores">
                 <div class="computer-user-scores">
                     <div class="player-scores">
                         <p>Player scores</p>
-                        <div class="scores-box">
-                            1
+                        <div class="player-scores-box">
+                            0
                         </div>
                     </div>
                     <div class="computer-scores">
                         <p>Computer scores</p>
-                        <div class="scores-box">
-                            1
+                        <div class="computer-scores-box">
+                            0
                         </div>
                     </div>
                 </div>
                 <div class="round-result">
-                    tie
+                    -
                 </div>
             </div>
         </div>
