@@ -4,14 +4,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <input class="pick" type="radio" value="rock" name="pick">rock
-    <input class="pick" type="radio" value="paper" name="pick">paper
-    <input class="pick" type="radio" value="scissors" name="pick">Scissors
-    <br>
-    <button onclick="getResult()">submit</button>
-    <script src="./script.js"></script>
+
+    <div class="container">
+        <div class="header">
+            <h1>Rock Paper Scissors</h1>
+            <hr>
+        </div>
+        <div class="user-pick">
+            <h3>Choose your weapon</h3>
+            <p>First to score 5 points wins the game</p>
+            <div class="btn-group">
+                <button class="btn">rock</button>
+                <button class="btn">paper</button>
+                <button class="btn">scissors</button>
+            </div>
+            <div class="scores">
+                <div class="computer-user-scores">
+                    <div class="player-scores">
+                        <p>Player scores</p>
+                        <div class="scores-box">
+                            1
+                        </div>
+                    </div>
+                    <div class="computer-scores">
+                        <p>Computer scores</p>
+                        <div class="scores-box">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <div class="round-result">
+                    tie
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AdibZouiten"><p class="handel">@adibzouiten</p></a>
+    </div>
+
+    <!-- <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="user-input">
+            <button class="btn" id="rock"><i class="fa-solid fa-hand-back-fist fa-2xl"></i></button>
+            <button class="btn" id="paper"><i class="fa-solid fa-hand fa-2xl"></i></button>
+            <button class="btn" id="scissors"><i class="fa-solid fa-hand-scissors fa-2xl"></i></button>
+        </div>
+    </div> -->
+    <script src="script.js" defer></script>
 </body>
 </html>
